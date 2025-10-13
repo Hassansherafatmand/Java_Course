@@ -1,5 +1,0 @@
-This is an example sentence.
-Java is fun to learn.
-Extra spaces at the start.
-Tabs and multiple spaces mixed.
-End of the test.
