@@ -1,22 +1,22 @@
 import princetonLibs.StdIn;
 import princetonLibs.StdOut;
-import princetonLibs.StdDraw;
+import java.util.*;
+
 
 public class StdInOutPrinceton {
 
 	public static void main(String[] args) {
 		
+		Random rand = new Random();
+//		if((rand.nextInt(7) + 1) > 3 )System.out.println("Heads");
+//		else System.out.println("Tails");
+
+		double r = Math.random() * 7;
+		System.out.println(r);
+		if(r > 3 )System.out.println("Heads");
+		else System.out.println("Tails");
 		
 		
-
-        // draw the triangle
-        double t = Math.sqrt(3.0) / 2.0;
-        StdDraw.line(0.0, 0.0, 1.0, 0.0);
-        StdDraw.line(1.0, 0.0, 0.5, t);
-        StdDraw.line(0.5, t, 0.0, 0.0);
-
 		
 	}
-
-	
 }

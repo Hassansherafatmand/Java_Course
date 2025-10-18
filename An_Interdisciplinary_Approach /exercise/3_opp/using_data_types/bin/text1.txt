@@ -1,0 +1,2 @@
+Hi java,
+This is an mazing language.
