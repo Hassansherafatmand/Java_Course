@@ -6,7 +6,7 @@ import java.util.Scanner;
 * we can use the () to group the area code and then use '?' to make it 0 or 1 (optional)
 * Then we define the rest
 * Also we can use '?' for the space between area code and the actual number: '\\s?' in the below regEx
-* "(\\(\\d{3}\\)\\s?)?\\d{3}-\\d{4}"
+* "^(\\(\\d{3}\\)\\s?)?\\d{3}-\\d{4}$"
 * 
 */ 
 //-------------------------------------------
@@ -22,7 +22,7 @@ public class RegEx {
 		String phone = consoul.nextLine();
 	
 		
-		String defualtRegExp = "(\\(\\d{3}\\)\\s?)?\\d{3}-\\d{4}";
+		String defualtRegExp = "^(\\(\\d{3}\\)\\s?)?\\d{3}-\\d{4}$";
 
 		if(phone.matches(defualtRegExp)) 	System.out.println("Valid phone number format");
 		else 								System.out.println("Invalid phone number format");
